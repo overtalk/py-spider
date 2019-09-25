@@ -16,11 +16,11 @@ NEWSPIDER_MODULE = 'py_spider.spiders'
 
 PROXIES = [
    # ok
-   'http://27.159.165.209:9999',
+   # 'http://27.159.165.209:9999', timeout
    'http://61.189.242.243:55484',
-   'http://125.123.127.148:9999',
-   'http://110.86.137.201:9999',
-   'http://27.204.117.154:9999',
+   # 'http://125.123.127.148:9999',
+   # 'http://110.86.137.201:9999', error 61
+   # 'http://27.204.117.154:9999', timeout
 ]
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

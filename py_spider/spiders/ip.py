@@ -14,3 +14,4 @@ class Spider(scrapy.Spider):
 
     def parse(self, response):
         print(response.text)
+        print(response.request.headers['User-Agent'])

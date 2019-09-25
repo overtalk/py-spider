@@ -14,6 +14,16 @@ BOT_NAME = 'py_spider'
 SPIDER_MODULES = ['py_spider.spiders']
 NEWSPIDER_MODULE = 'py_spider.spiders'
 
+PROXIES = [
+   # 'http://27.152.91.193:9999',
+   # 'http://59.57.148.200:9999',
+   # 'http://59.57.148.123:9999',
+   # 'http://49.73.157.109:9999',
+   # ok
+   'http://222.189.245.252:9999',
+   'http://61.189.242.243:55484',
+   'http://125.123.127.148:9999',
+]
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'py_spider (+http://www.yourdomain.com)'
@@ -54,6 +64,7 @@ DOWNLOAD_DELAY = 3
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
    'py_spider.middlewares.RandomUserAgent': 543,
+   'py_spider.middlewares.ProxyMiddleware': 541,
 }
 
 # Enable or disable extensions

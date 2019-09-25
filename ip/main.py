@@ -53,7 +53,8 @@ class GetIp(object):
             div = soup.find(class_='well')
             if div:
                 print(div.text)
-            ip_info = {'address': ip_address, 'port': ip_port}
+            # ip_info = {'address': ip_address, 'port': ip_port}
+            ip_info = 'http://'+ip_address+":"+ip_port
             self.ip_list.append(ip_info)
 
     def main(self):

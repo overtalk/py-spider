@@ -15,14 +15,12 @@ SPIDER_MODULES = ['py_spider.spiders']
 NEWSPIDER_MODULE = 'py_spider.spiders'
 
 PROXIES = [
-   # 'http://27.152.91.193:9999',
-   # 'http://59.57.148.200:9999',
-   # 'http://59.57.148.123:9999',
-   # 'http://49.73.157.109:9999',
    # ok
-   'http://222.189.245.252:9999',
+   'http://27.159.165.209:9999',
    'http://61.189.242.243:55484',
    'http://125.123.127.148:9999',
+   'http://110.86.137.201:9999',
+   'http://27.204.117.154:9999',
 ]
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -37,7 +35,7 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 3
+DOWNLOAD_DELAY = 1
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16

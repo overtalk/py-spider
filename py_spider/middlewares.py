@@ -24,6 +24,7 @@ class ProxyMiddleware(object):
     def process_request(self, request, spider):
         ip = random.choice(self.ip)
         request.meta['proxy'] = ip
+        print("use proxy ip --->", ip)
 
 
 class PySpiderSpiderMiddleware(object):
